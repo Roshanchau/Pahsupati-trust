@@ -1,16 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
-}
+body{
+    @apply bg-white font-sans p-0 m-0 h-screen overflow-x-hidden  ;
+
+  }
+
+#_next{
+    @apply h-screen;
+  }
+  
+  html{
+    @apply h-screen;
+  }
+
+/* onfocus to the navLinks */
+  .active{
+    color:rgb(229,175,8);
+  }
