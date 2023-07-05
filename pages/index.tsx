@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import SwiperComponent from "../components/SwiperComponent"
 import Objectives from "../components/Objectives"
 import { Element } from "react-scroll"
+import Teams from "../components/Teams"
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Element name="Objectives">
       <Objectives/>
       </Element>
+      <Teams/>
     </>
   )
 }

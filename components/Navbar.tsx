@@ -10,8 +10,6 @@ import {
 
 const TOP_OFFSET = 40;
 
-import "swiper/swiper-bundle.min.css";
-import Info from "./Objectives";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showBackgroud, setShowBackgroud] = useState(false);

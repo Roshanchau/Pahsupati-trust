@@ -20,3 +20,9 @@ body{
   .active{
     color:rgb(229,175,8);
   }
+
+  @layer base {
+    html {
+      font-family: 'Jost', sans-serif;
+    }
+  }

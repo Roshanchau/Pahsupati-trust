@@ -2,6 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import SwiperCore, { Autoplay } from "swiper";
+import "swiper/swiper-bundle.min.css";
+
 const SwiperComponent = () => {
   SwiperCore.use([Autoplay]);
 
