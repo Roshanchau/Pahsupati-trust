@@ -109,7 +109,7 @@ const Navbar = () => {
                  lg:gap-10
                  "
             >
-              <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
+              <li tabIndex={0} className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500">
               <Link
                   activeClass="active"
                   to="SwiperComponent"
@@ -121,7 +121,7 @@ const Navbar = () => {
                    Home
                    </Link>
               </li>
-              <li className=" drop-shadow-sm cursor-pointer  hover:text-yellow-500">
+              <li tabIndex={0} className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500">
               <Link
                   activeClass="active"
                   to="Objectives"
@@ -133,8 +133,17 @@ const Navbar = () => {
                 Objectives
                 </Link>
               </li>
-              <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
-                Team
+              <li tabIndex={0} className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500">
+              <Link
+                  activeClass="active"
+                  to="Teams"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                   Teams
+                   </Link>
               </li>
               <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
                 Projects

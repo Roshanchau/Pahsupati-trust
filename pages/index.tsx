@@ -4,6 +4,7 @@ import SwiperComponent from "../components/SwiperComponent"
 import Objectives from "../components/Objectives"
 import { Element } from "react-scroll"
 import Teams from "../components/Teams"
+import Projects from "../components/Projects"
 
 
 const Home = () => {
@@ -17,7 +18,12 @@ const Home = () => {
       <Element name="Objectives">
       <Objectives/>
       </Element>
+      <Element name="Teams">
       <Teams/>
+      </Element>
+      <Element name="Projects">
+      <Projects/>
+      </Element>
     </>
   )
 }

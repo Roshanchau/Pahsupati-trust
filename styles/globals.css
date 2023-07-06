@@ -16,10 +16,7 @@ body{
     @apply h-screen;
   }
 
-/* onfocus to the navLinks */
-  .active{
-    color:rgb(229,175,8);
-  }
+
 
   @layer base {
     html {

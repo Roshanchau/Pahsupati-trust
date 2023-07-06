@@ -13,6 +13,7 @@ const Objectives = () => {
             sm:text-xl
             text-yellow-500"
           >
+            <img src="/images/service-line.png" alt="" className=" absolute right-0"/>
             Welcome To Shree Pashupati Trust Nepal
           </p>
           <div>
@@ -34,8 +35,18 @@ const Objectives = () => {
         </div>
         <div className="flex flex-col items-center justify-center py-1 sm:py-6 md:px-10 md:mx-20">
           <div className="grid lg:grid-cols-3 grid-cols-1">
-            <div className="sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 lg:border-r-[1px] flex flex-col items-center justify-center py-2 sm:py-3 px-2 sm:px-4 ">
-              <div className="flex flex-col items-center justify-center  opacity-70 hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
+            <div className="sm:hover:scale-110 
+            ease-in-out 
+            transition-all 
+            duration-100 delay-75 
+            lg:border-r-[1px] 
+            flex flex-col 
+            items-center 
+            justify-center 
+            py-2 sm:py-3 px-2 sm:px-4 
+            group
+            ">
+              <div className="flex flex-col items-center justify-center  opacity-70 group-hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
                 <img
                   className="h-full w-full z-50"
                   src="/images/healthY.png"
@@ -52,8 +63,8 @@ const Objectives = () => {
                 </p>
               </div>
             </div>
-            <div className="sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 lg:border-r-[1px] flex flex-col items-center justify-center py-2 sm:py-3 px-2 sm:px-4 ">
-              <div className="flex flex-col items-center justify-center  opacity-70 hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
+            <div className="group sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 lg:border-r-[1px] flex flex-col items-center justify-center py-2 sm:py-3 px-2 sm:px-4 ">
+              <div className="flex flex-col items-center justify-center  opacity-70 group-hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
                 <img
                   className="h-full w-full z-50"
                   src="/images/education.png"
@@ -70,8 +81,8 @@ const Objectives = () => {
                 </p>
               </div>
             </div>
-            <div className="sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 flex flex-col items-center justify-center py-2 sm:py-3 px-2 sm:px-4 ">
-              <div className="flex flex-col items-center justify-center  opacity-70 hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
+            <div className="group sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 flex flex-col items-center justify-center py-2 sm:py-3 px-2 sm:px-4 ">
+              <div className="flex flex-col items-center justify-center  opacity-70 group-hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
                 <img
                   className="h-full w-full z-50"
                   src="/images/livelihood.png"
@@ -91,8 +102,8 @@ const Objectives = () => {
             </div>
           </div>
           <div className="grid lg:grid-cols-2 grid-cols-1 mt-2 lg:mx-20">
-            <div className="sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 lg:border-r-[1px] flex flex-col items-center justify-center py-1 sm:py-2 px-1 sm:px-3 ">
-              <div className="flex flex-col items-center justify-center  opacity-70 hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
+            <div className="group sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 lg:border-r-[1px] flex flex-col items-center justify-center py-1 sm:py-2 px-1 sm:px-3 ">
+              <div className="flex flex-col items-center justify-center  opacity-70 group-hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
                 <img
                   className="h-full w-full z-50"
                   src="/images/relief.png"
@@ -109,8 +120,8 @@ const Objectives = () => {
                 </p>
               </div>
             </div>
-            <div className="sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 flex flex-col items-center justify-center py-2 sm:py-3 px-1 sm:px-3 ">
-              <div className="flex flex-col items-center justify-center  opacity-70 hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
+            <div className="group sm:hover:scale-110 ease-in-out transition-all duration-100 delay-75 flex flex-col items-center justify-center py-2 sm:py-3 px-1 sm:px-3 ">
+              <div className="flex flex-col items-center justify-center  opacity-70 group-hover:opacity-100 ease-in-out transition-opacity delay-100 duration-700">
                 <img
                   className="h-full w-full z-50"
                   src="/images/environment.png"
