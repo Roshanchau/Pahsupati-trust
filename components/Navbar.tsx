@@ -15,6 +15,23 @@ const Navbar = () => {
   const [showBackgroud, setShowBackgroud] = useState(false);
 
   useEffect(() => {
+    Events.scrollEvent.register("begin", function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register("end", function () {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= TOP_OFFSET) {
         setShowBackgroud(true);
@@ -109,8 +126,11 @@ const Navbar = () => {
                  lg:gap-10
                  "
             >
-              <li tabIndex={0} className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500">
-              <Link
+              <li
+                tabIndex={0}
+                className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500"
+              >
+                <Link
                   activeClass="active"
                   to="SwiperComponent"
                   spy={true}
@@ -118,11 +138,14 @@ const Navbar = () => {
                   offset={-70}
                   duration={500}
                 >
-                   Home
-                   </Link>
+                  Home
+                </Link>
               </li>
-              <li tabIndex={0} className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500">
-              <Link
+              <li
+                tabIndex={0}
+                className="drop-shadow-sm cursor-pointer   hover:text-yellow-500"
+              >
+                <Link
                   activeClass="active"
                   to="Objectives"
                   spy={true}
@@ -130,11 +153,14 @@ const Navbar = () => {
                   offset={-70}
                   duration={500}
                 >
-                Objectives
+                  Objectives
                 </Link>
               </li>
-              <li tabIndex={0} className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500">
-              <Link
+              <li
+                tabIndex={0}
+                className="drop-shadow-sm cursor-pointer  hover:text-yellow-500"
+              >
+                <Link
                   activeClass="active"
                   to="Teams"
                   spy={true}
@@ -142,11 +168,23 @@ const Navbar = () => {
                   offset={-70}
                   duration={500}
                 >
-                   Teams
-                   </Link>
+                  Teams
+                </Link>
               </li>
-              <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
-                Projects
+              <li
+                tabIndex={0}
+                className="drop-shadow-sm cursor-pointer   hover:text-yellow-500"
+              >
+                <Link
+                  activeClass="active"
+                  to="Projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Projects
+                </Link>
               </li>
               <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
                 Gallery
@@ -157,7 +195,6 @@ const Navbar = () => {
             </ul>
           </div>
         </nav>
-
 
         {/* <aside
           id="default-sidebar"
