@@ -29,7 +29,7 @@ const Navbar = () => {
       Events.scrollEvent.remove("begin");
       Events.scrollEvent.remove("end");
     };
-  }, []);
+  }, [scrollSpy]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -128,7 +128,7 @@ const Navbar = () => {
             >
               <li
                 tabIndex={0}
-                className="drop-shadow-sm cursor-pointer focus-within:text-yellow-500  hover:text-yellow-500"
+                className="drop-shadow-sm cursor-pointer  hover:text-yellow-500"
               >
                 <Link
                   activeClass="active"
@@ -187,10 +187,10 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
-                Gallery
+              Contacts
               </li>
               <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
-                Contacts
+                Donate
               </li>
             </ul>
           </div>

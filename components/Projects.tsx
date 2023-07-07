@@ -9,7 +9,7 @@ const Projects = () => {
         flex flex-col
         items-center
         justify-center
-        bg-zinc-200
+        bg-zinc-100
         w-full
     "
       >
@@ -42,12 +42,12 @@ const Projects = () => {
             className="
             flex
             flex-col
-            md:flex-row
+            sm:flex-row
             rounded-lg
-            bg-zinc-200
+            bg-zinc-200 cursor-pointer
             mt-4
             group
-            shadow-2xl
+            shadow-xl
             md:w-[80%]
             "
           >
@@ -74,9 +74,10 @@ const Projects = () => {
               <h1 className="text-[20px] 
               md:text-2xl 
               font-semibold
-              hover:text-yellow-500
+              hover:text-yellow-600
               ">Cloth And Food Bank Nepal</h1>
               <p className="flex items-center justify-center gap-1
+                text-yellow-500
                 text-[10px] font-normal
               "><CgCalendarDates/>May 18th 2023</p>
               <p className="sm:font-normal
@@ -94,8 +95,8 @@ const Projects = () => {
             {/* image */}
             <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0   lg:skew-x-2 ">
                 <img className="
-                sm:group-hover:opacity-100
-                sm:group-hover:scale-105
+                lg:group-hover:opacity-100
+                lg:group-hover:scale-105
                 transition
                 duration
                 ease-in-out
@@ -112,20 +113,20 @@ const Projects = () => {
             className="
             flex
             flex-col
-            md:flex-row
+            sm:flex-row
             rounded-lg
-            bg-zinc-200
+            bg-zinc-200 cursor-pointer
             group
             mt-10
-            shadow-2xl
+            shadow-xl
             md:w-[80%]
             "
           >
             {/* image */}
             <div className="flex flex-row items-center sm:justify-start justify-center md:ml-10 p-4 sm:p-0   lg:-skew-x-2 ">
                 <img className="
-                  sm:group-hover:opacity-100
-                  sm:group-hover:scale-105
+                  lg:group-hover:opacity-100
+                  lg:group-hover:scale-105
                   transition
                   duration
                   ease-in-out
@@ -151,11 +152,12 @@ const Projects = () => {
               <h1 className="text-[20px] 
               md:text-2xl 
               font-semibold
-              hover:text-yellow-500
+              hover:text-yellow-600
               
               ">Cloth And Food Bank Nepal</h1>
               <p className="flex items-center justify-center gap-1
                 text-[10px] font-normal
+                text-yellow-500
               "><CgCalendarDates/>May 18th 2023</p>
               <p className="sm:font-normal
               text-6px md:text-[sm]
@@ -176,12 +178,12 @@ const Projects = () => {
             className="
             flex
             flex-col
-            md:flex-row
+            sm:flex-row
             rounded-lg
-            bg-zinc-200
+            bg-zinc-200 cursor-pointer
             mt-10
             group
-            shadow-2xl
+            shadow-xl
             md:w-[80%]
             "
           >
@@ -208,11 +210,12 @@ const Projects = () => {
               <h1 className="text-[20px] 
               md:text-2xl 
               font-semibold
-              hover:text-yellow-500
+              hover:text-yellow-600
               
               ">Cloth And Food Bank Nepal</h1>
               <p className="flex items-center justify-center gap-1
                 text-[10px] font-normal
+                text-yellow-500
               "><CgCalendarDates/>May 18th 2023</p>
               <p className="sm:font-normal
               text-6px md:text-[sm]
@@ -230,8 +233,8 @@ const Projects = () => {
             <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0   lg:skew-x-2 ">
                 <img className="
                 rounded-md
-                sm:group-hover:opacity-100
-                sm:group-hover:scale-105
+                lg:group-hover:opacity-100
+                lg:group-hover:scale-105
                 transition
                 duration
                 ease-in-out
@@ -247,20 +250,20 @@ const Projects = () => {
             className="
             flex
             flex-col
-            md:flex-row
+            sm:flex-row
             rounded-lg
-            bg-zinc-200
+            bg-zinc-200 cursor-pointer
             group
             mt-10
-            shadow-2xl
+            shadow-xl
             md:w-[80%]
             "
           >
             {/* image */}
             <div className="flex flex-row items-center sm:justify-start justify-center md:ml-10 p-4 sm:p-0   lg:-skew-x-2 ">
                 <img className="
-                  sm:group-hover:opacity-100
-                  sm:group-hover:scale-105
+                  lg:group-hover:opacity-100
+                  lg:group-hover:scale-105
                   transition
                   duration
                   ease-in-out
@@ -286,10 +289,11 @@ const Projects = () => {
               <h1 className="text-[20px] 
               md:text-2xl 
               font-semibold
-              hover:text-yellow-500
+              hover:text-yellow-600
               ">Cloth And Food Bank Nepal</h1>
              <p className="flex items-center justify-center gap-1
                 text-[10px] font-normal
+                text-yellow-500
               "><CgCalendarDates/>May 18th 2023</p>
               <p className="sm:font-normal
               text-6px md:text-[sm]
