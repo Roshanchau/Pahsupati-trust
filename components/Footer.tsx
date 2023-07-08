@@ -46,10 +46,15 @@ const Footer = () => {
                 className="
             flex items-center justify-start
             gap-3 
+
             "
               >
                 <BsFillTelephoneFill className="text-yellow-500" />
-                9808846298
+                <span className="hover:text-green-600
+                cursor-pointer
+                transition duration-100">
+                  9808846298
+                </span>
               </p>
               <p
                 className="
@@ -57,7 +62,11 @@ const Footer = () => {
             gap-3"
               >
                 <MdEmail className="text-yellow-500" />
-                roshanchau001@gmail.com
+                <span className="hover:text-green-600
+                cursor-pointer
+                transition duration-100">
+                  roshanchau001@gmail.com
+                </span>
               </p>
               <p
                 className="
@@ -65,7 +74,11 @@ const Footer = () => {
             gap-3"
               >
                 <FaMapLocation className="text-yellow-500" />
-                Dharan-15,langalichowk, Nepal
+                <span className="hover:text-green-600
+                cursor-pointer
+                transition duration-100">
+                  Dharan-15,langalichowk, Nepal
+                </span>
               </p>
             </div>
             {/* Quick Links */}
@@ -91,10 +104,10 @@ const Footer = () => {
               >
                 Quick Links
               </h2>
-              <a
-                href=""
+              <p
                 className="flex items-center
               text-lg
+              cursor-pointer
               gap-3"
               >
                 <Link
@@ -107,10 +120,10 @@ const Footer = () => {
                 >
                   Objectives
                 </Link>
-              </a>
-              <a
-                href=""
+              </p>
+              <p
                 className="flex 
+                cursor-pointer
               text-lg
               items-center gap-3"
               >
@@ -124,10 +137,10 @@ const Footer = () => {
                 >
                   Projects
                 </Link>
-              </a>
-              <a
-                href=""
+              </p>
+              <p
                 className="
+                cursor-pointer
               text-lg
               flex items-center gap-3"
               >
@@ -141,7 +154,7 @@ const Footer = () => {
                 >
                   Teams
                 </Link>
-              </a>
+              </p>
             </div>
           </div>
 
