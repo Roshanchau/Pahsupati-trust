@@ -33,7 +33,8 @@ const Projects = () => {
             flex-col
             items-center justify-center
             p-2
-            mt-4
+            mt-2
+            mb-4
         "
         >
           {/*Project cards */}
@@ -51,7 +52,7 @@ const Projects = () => {
             md:w-[80%]
             "
           >
-                  <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0   lg:skew-x-2 ">
+                  <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0  ">
                 <img className="
                 rounded-md
                 opacity-90
@@ -93,7 +94,7 @@ const Projects = () => {
               </p>
             </div>
             {/* image */}
-            <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0   lg:skew-x-2 ">
+            <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 ">
                 <img className="
                 lg:group-hover:opacity-100
                 lg:group-hover:scale-105
@@ -102,7 +103,6 @@ const Projects = () => {
                 ease-in-out
                 opacity-90
                 rounded-md
-                md:rounded-none
                     lg:h-full lg:w-[60%] 
                 " src="/images/project1.jpeg" alt="project" />
             </div>
@@ -123,16 +123,15 @@ const Projects = () => {
             "
           >
             {/* image */}
-            <div className="flex flex-row items-center sm:justify-start justify-center md:ml-10 p-4 sm:p-0   lg:-skew-x-2 ">
+            <div className="flex flex-row items-center justify-center md:mr-7 p-4 ">
                 <img className="
-                  lg:group-hover:opacity-100
-                  lg:group-hover:scale-105
-                  transition
-                  duration
-                  ease-in-out
-                  opacity-90
+                lg:group-hover:opacity-100
+                lg:group-hover:scale-105
+                transition
+                duration
+                ease-in-out
+                opacity-90
                 rounded-md
-                md:rounded-none
                     lg:h-full lg:w-[60%] 
                 " src="/images/project1.jpeg" alt="project" />
             </div>
@@ -187,7 +186,7 @@ const Projects = () => {
             md:w-[80%]
             "
           >
-                  <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0   lg:skew-x-2 ">
+                  <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0 ">
                 <img className="
                 rounded-md
                 opacity-90
@@ -230,16 +229,15 @@ const Projects = () => {
               </p>
             </div>
             {/* image */}
-            <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0   lg:skew-x-2 ">
+            <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 ">
                 <img className="
-                rounded-md
                 lg:group-hover:opacity-100
                 lg:group-hover:scale-105
                 transition
                 duration
                 ease-in-out
                 opacity-90
-                md:rounded-none
+                rounded-md
                     lg:h-full lg:w-[60%] 
                 " src="/images/project1.jpeg" alt="project" />
             </div>
@@ -260,16 +258,15 @@ const Projects = () => {
             "
           >
             {/* image */}
-            <div className="flex flex-row items-center sm:justify-start justify-center md:ml-10 p-4 sm:p-0   lg:-skew-x-2 ">
+            <div className="flex flex-row items-center justify-center md:mr-7 p-4 ">
                 <img className="
-                  lg:group-hover:opacity-100
-                  lg:group-hover:scale-105
-                  transition
-                  duration
-                  ease-in-out
-                  opacity-90
+                lg:group-hover:opacity-100
+                lg:group-hover:scale-105
+                transition
+                duration
+                ease-in-out
+                opacity-90
                 rounded-md
-                md:rounded-none
                     lg:h-full lg:w-[60%] 
                 " src="/images/project1.jpeg" alt="project" />
             </div>

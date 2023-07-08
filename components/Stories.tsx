@@ -8,7 +8,6 @@ const Stories = () => {
         className="bg-zinc-600 w-full flex flex-col
      items-center
      justify-center
-     mt-10
      "
       >
         {/* description */}
@@ -104,6 +103,7 @@ const Stories = () => {
             <div className="relative">
               <img
               className="
+              opacity-80
                 rounded-b-[35%]
                 h-[80%]
               " 
@@ -159,6 +159,7 @@ const Stories = () => {
             <div className="relative">
               <img
               className="
+              opacity-80
                 rounded-b-[35%]
                 h-[80%]
               " 
@@ -214,6 +215,7 @@ const Stories = () => {
             <div className="relative">
               <img
               className="
+              opacity-80
                 rounded-b-[35%]
                 h-[80%]
               " 

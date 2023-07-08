@@ -61,7 +61,7 @@ const Navbar = () => {
             lg:h-[auto]
             drop-shadow-xl
             transition
-            ${showBackgroud ? "bg-zinc-50" : ""}
+            ${showBackgroud ? "bg-zinc-50 " : ""}
   `}
         >
           <div
@@ -136,7 +136,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}
+                  duration={2000}
                 >
                   Home
                 </Link>
@@ -151,7 +151,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}
+                  duration={1000}
                 >
                   Objectives
                 </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}
+                  duration={1000}
                 >
                   Teams
                 </Link>
@@ -181,16 +181,27 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}
+                  duration={1000}
                 >
                   Projects
                 </Link>
               </li>
-              <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
-              Contacts
+              <li
+                tabIndex={0}
+              className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
+              <Link
+                  activeClass="active"
+                  to="Contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={2000}
+                >
+                  Contact
+                </Link>
               </li>
               <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
-                Donate
+                Donate Now
               </li>
             </ul>
           </div>
