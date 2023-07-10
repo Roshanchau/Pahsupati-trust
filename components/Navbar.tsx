@@ -13,7 +13,7 @@ import {AiOutlineTeam} from "react-icons/ai"
 import {GrProjects} from "react-icons/gr"
 import {AiOutlineContacts} from "react-icons/ai"
 import {LiaDonateSolid} from "react-icons/lia"
-
+import { motion } from "framer-motion";
 
 const TOP_OFFSET = 40;
 
@@ -57,9 +57,10 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <nav
+        <motion.nav
+        
           className={`flex flex-row items-center sm:justify-between p-2
-         t   w-full
+         t  w-full
             z-50
             fixed
             top-0
@@ -115,7 +116,13 @@ const Navbar = () => {
                md:px-3
           "
           >
-            <ul
+            <motion.ul
+            initial={{ opacity: 0 }}
+            viewport={{ once: true }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.5, delay:0.15},
+            }}
               className="font-thin
               text-nutral-600
               hidden
@@ -211,9 +218,9 @@ const Navbar = () => {
               <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
                 Donate Now
               </li>
-            </ul>
+            </motion.ul>
           </div>
-        </nav>
+        </motion.nav>
 
         {isOpen && (
           <div className="transition-all ease-in-out 

@@ -1,10 +1,11 @@
 import React from "react";
-import{CgCalendarDates} from "react-icons/cg"
+import { CgCalendarDates } from "react-icons/cg";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <>
-      <div
+      <motion.div
         className="
         flex flex-col
         items-center
@@ -13,7 +14,10 @@ const Projects = () => {
         w-full
     "
       >
-        <div
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
           className="
             font-semibold 
             md:text-3xl
@@ -24,10 +28,13 @@ const Projects = () => {
         "
         >
           <h1 className="font-[Poppins]">PROJECTS</h1>
-        </div>
+        </motion.div>
 
         {/*father project card div */}
-        <div
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
           className="
             flex
             flex-col
@@ -52,13 +59,17 @@ const Projects = () => {
             md:w-[80%]
             "
           >
-                  <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0  ">
-                <img className="
+            <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0  ">
+              <img
+                className="
                 rounded-md
                 opacity-90
                 md:rounded-none
                     lg:h-full lg:w-[60%] 
-                " src="/images/project1.jpeg" alt="project" />
+                "
+                src="/images/project1.jpeg"
+                alt="project"
+              />
             </div>
             <div
               className="
@@ -72,18 +83,29 @@ const Projects = () => {
                     sm:w-[80%]
                 "
             >
-              <h1 className="text-[20px] 
+              <h1
+                className="text-[20px] 
               md:text-2xl 
               font-semibold
               hover:text-yellow-600
-              ">Cloth And Food Bank Nepal</h1>
-              <p className="flex items-center justify-center gap-1
+              "
+              >
+                Cloth And Food Bank Nepal
+              </h1>
+              <p
+                className="flex items-center justify-center gap-1
                 text-yellow-500
                 text-[10px] font-normal
-              "><CgCalendarDates/>May 18th 2023</p>
-              <p className="sm:font-normal
+              "
+              >
+                <CgCalendarDates />
+                May 18th 2023
+              </p>
+              <p
+                className="sm:font-normal
               text-6px md:text-[sm]
-              ">
+              "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, impedit aspernatur velit numquam sit ipsum consectetur
                 obcaecati, incidunt cupiditate voluptatibus ratione quidem qui
@@ -95,7 +117,8 @@ const Projects = () => {
             </div>
             {/* image */}
             <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 ">
-                <img className="
+              <img
+                className="
                 lg:group-hover:opacity-100
                 lg:group-hover:scale-105
                 transition
@@ -104,7 +127,10 @@ const Projects = () => {
                 opacity-90
                 rounded-md
                     lg:h-full lg:w-[60%] 
-                " src="/images/project1.jpeg" alt="project" />
+                "
+                src="/images/project1.jpeg"
+                alt="project"
+              />
             </div>
           </div>
 
@@ -124,7 +150,8 @@ const Projects = () => {
           >
             {/* image */}
             <div className="flex flex-row items-center justify-center md:mr-7 p-4 ">
-                <img className="
+              <img
+                className="
                 lg:group-hover:opacity-100
                 lg:group-hover:scale-105
                 transition
@@ -133,7 +160,10 @@ const Projects = () => {
                 opacity-90
                 rounded-md
                     lg:h-full lg:w-[60%] 
-                " src="/images/project1.jpeg" alt="project" />
+                "
+                src="/images/project1.jpeg"
+                alt="project"
+              />
             </div>
             <div
               className="
@@ -148,19 +178,30 @@ const Projects = () => {
                     mr-2
                 "
             >
-              <h1 className="text-[20px] 
+              <h1
+                className="text-[20px] 
               md:text-2xl 
               font-semibold
               hover:text-yellow-600
               
-              ">Cloth And Food Bank Nepal</h1>
-              <p className="flex items-center justify-center gap-1
+              "
+              >
+                Cloth And Food Bank Nepal
+              </h1>
+              <p
+                className="flex items-center justify-center gap-1
                 text-[10px] font-normal
                 text-yellow-500
-              "><CgCalendarDates/>May 18th 2023</p>
-              <p className="sm:font-normal
+              "
+              >
+                <CgCalendarDates />
+                May 18th 2023
+              </p>
+              <p
+                className="sm:font-normal
               text-6px md:text-[sm]
-              ">
+              "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, impedit aspernatur velit numquam sit ipsum consectetur
                 obcaecati, incidunt cupiditate voluptatibus ratione quidem qui
@@ -170,7 +211,6 @@ const Projects = () => {
                 animi, quis a ad?
               </p>
             </div>
-            
           </div>
           {/* 3 */}
           <div
@@ -186,13 +226,17 @@ const Projects = () => {
             md:w-[80%]
             "
           >
-                  <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0 ">
-                <img className="
+            <div className="sm:hidden flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 sm:p-0 ">
+              <img
+                className="
                 rounded-md
                 opacity-90
                 md:rounded-none
                     lg:h-full lg:w-[60%] 
-                " src="/images/project1.jpeg" alt="project" />
+                "
+                src="/images/project1.jpeg"
+                alt="project"
+              />
             </div>
             <div
               className="
@@ -206,19 +250,30 @@ const Projects = () => {
                     sm:w-[80%]
                 "
             >
-              <h1 className="text-[20px] 
+              <h1
+                className="text-[20px] 
               md:text-2xl 
               font-semibold
               hover:text-yellow-600
               
-              ">Cloth And Food Bank Nepal</h1>
-              <p className="flex items-center justify-center gap-1
+              "
+              >
+                Cloth And Food Bank Nepal
+              </h1>
+              <p
+                className="flex items-center justify-center gap-1
                 text-[10px] font-normal
                 text-yellow-500
-              "><CgCalendarDates/>May 18th 2023</p>
-              <p className="sm:font-normal
+              "
+              >
+                <CgCalendarDates />
+                May 18th 2023
+              </p>
+              <p
+                className="sm:font-normal
               text-6px md:text-[sm]
-              ">
+              "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, impedit aspernatur velit numquam sit ipsum consectetur
                 obcaecati, incidunt cupiditate voluptatibus ratione quidem qui
@@ -230,7 +285,8 @@ const Projects = () => {
             </div>
             {/* image */}
             <div className="hidden sm:flex flex-row items-center sm:justify-end justify-center md:mr-7 p-4 ">
-                <img className="
+              <img
+                className="
                 lg:group-hover:opacity-100
                 lg:group-hover:scale-105
                 transition
@@ -239,7 +295,10 @@ const Projects = () => {
                 opacity-90
                 rounded-md
                     lg:h-full lg:w-[60%] 
-                " src="/images/project1.jpeg" alt="project" />
+                "
+                src="/images/project1.jpeg"
+                alt="project"
+              />
             </div>
           </div>
 
@@ -259,16 +318,20 @@ const Projects = () => {
           >
             {/* image */}
             <div className="flex flex-row items-center justify-center md:mr-7 p-4 ">
-                <img className="
+              <img
+                className="
                 lg:group-hover:opacity-100
                 lg:group-hover:scale-105
                 transition
                 duration
-                ease-in-out
+                ease-in-outmotion.
                 opacity-90
                 rounded-md
                     lg:h-full lg:w-[60%] 
-                " src="/images/project1.jpeg" alt="project" />
+                "
+                src="/images/project1.jpeg"
+                alt="project"
+              />
             </div>
             <div
               className="
@@ -283,18 +346,29 @@ const Projects = () => {
                     mr-2
                 "
             >
-              <h1 className="text-[20px] 
+              <h1
+                className="text-[20px] 
               md:text-2xl 
               font-semibold
               hover:text-yellow-600
-              ">Cloth And Food Bank Nepal</h1>
-             <p className="flex items-center justify-center gap-1
+              "
+              >
+                Cloth And Food Bank Nepal
+              </h1>
+              <p
+                className="flex items-center justify-center gap-1
                 text-[10px] font-normal
                 text-yellow-500
-              "><CgCalendarDates/>May 18th 2023</p>
-              <p className="sm:font-normal
+              "
+              >
+                <CgCalendarDates />
+                May 18th 2023
+              </p>
+              <p
+                className="sm:font-normal
               text-6px md:text-[sm]
-              ">
+              "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente, impedit aspernatur velit numquam sit ipsum consectetur
                 obcaecati, incidunt cupiditate voluptatibus ratione quidem qui
@@ -304,11 +378,10 @@ const Projects = () => {
                 animi, quis a ad?
               </p>
             </div>
-            
           </div>
-        </div>
-      </div>
-    </> 
+        </motion.div>
+      </motion.div>
+    </>
   );
 };
 

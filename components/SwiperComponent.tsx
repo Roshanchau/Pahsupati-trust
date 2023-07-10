@@ -20,7 +20,7 @@ const SwiperComponent = () => {
         }}
       >
        
-        <SwiperSlide className="opacity-70">
+        <SwiperSlide className="opacity-90">
           <img
             className="h-full w-full bg-contain opacity-90"
             src="/images/p3.jpg"

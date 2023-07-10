@@ -50,7 +50,7 @@ const Contact = () => {
 
   return (
     <>
-      <div
+      <motion.div
         className="flex flex-col items-center 
     justify-center lg:ml-10
     transition
@@ -191,7 +191,7 @@ const Contact = () => {
             />
           </motion.div>
         </motion.div>
-      </div>
+      </motion.div>
     </>
   );
 };

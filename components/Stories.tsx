@@ -1,10 +1,11 @@
 import React from "react";
 import { BsHeartFill } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Stories = () => {
   return (
     <>
-      <div
+      <motion.div
         className="bg-zinc-600 w-full flex flex-col
      items-center
      justify-center
@@ -20,7 +21,9 @@ const Stories = () => {
         sm:px-8
        "
         >
-          <div
+          <motion.div
+            initial={{x:-10, y: -10, opacity: 0 }}
+            whileInView={{ x:0, y: 0, opacity: 1, transition: { duration: 1 } }}
             className="flex flex-col 
             w-[40%]
             gap-2
@@ -51,8 +54,11 @@ const Stories = () => {
             >
               Impact Stroies
             </h1>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={{x:10, y: -10, opacity: 0 }}
+            viewport={{once:true}}
+            whileInView={{ x:0, y: 0, opacity: 1, transition: { duration: 1 } }}
             className="flex
           items-center
           justify-center
@@ -75,10 +81,17 @@ const Stories = () => {
               sustainable livelihood, children, education, health, senior
               citizens, environment and natural disasters.
             </p>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="grid lg:grid-cols-3  grid-cols-1 
+        <motion.div
+         initial={{ opacity: 0, y: 100 }}
+         whileInView={{
+           opacity: 1,
+           y: 0,
+           transition: { delay: 0.5, duration: 0.75 },
+         }}
+          className="grid lg:grid-cols-3  grid-cols-1 
         lg:px-20 lg:py-10
         px-1
         md:pl-10
@@ -88,7 +101,8 @@ const Stories = () => {
         lg:ml-0
         mt-2
         sm:mt-0
-        ">
+        "
+        >
           <div
             className="flex flex-col items-center justify-center
             bg-white
@@ -97,53 +111,67 @@ const Stories = () => {
             px-4
             mt-1
             sm:mt-0
-            " 
+            "
           >
             {/* image */}
             <div className="relative">
               <img
-              className="
+                className="
               opacity-80
                 rounded-b-[35%]
                 h-[80%]
-              " 
-              src="/images/ambulance.jpg" alt="" />
-              <div className="h-7 w-7
+              "
+                src="/images/ambulance.jpg"
+                alt=""
+              />
+              <div
+                className="h-7 w-7
               absolute
               bottom-3
               left-8
                rounded-full 
-               bg-[rgb(252,173,48)]"></div>
+               bg-[rgb(252,173,48)]"
+              ></div>
             </div>
-            <div className="flex items-center
+            <div
+              className="flex items-center
             justify-center
                 text-center
                 mt-1
                 w-[95%]
-            ">
-              <p className="
+            "
+            >
+              <p
+                className="
               px-4
                 text-center
                 font-normal
                 text-zinc-500
-              ">
+              "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatibus laudantium debitis quibusdam, optio velit veniam
                 eos id laboriosam cupiditate rem ullam a veritatis pariatur
                 magnam libero eum fuga provident ipsa.
               </p>
             </div>
-            <div className="flex 
+            <div
+              className="flex 
             flex-col 
             items-center 
             justify-center
             mt-6
             mb-10
-            ">
-                <h3 className="
+            "
+            >
+              <h3
+                className="
                 font-semibold
-                ">Madhesa</h3>
-                <p className=" text-red-500">Resident-Inaruwa</p>
+                "
+              >
+                Madhesa
+              </h3>
+              <p className=" text-red-500">Resident-Inaruwa</p>
             </div>
           </div>
           <div
@@ -158,48 +186,62 @@ const Stories = () => {
             {/* image */}
             <div className="relative">
               <img
-              className="
+                className="
               opacity-80
                 rounded-b-[35%]
                 h-[80%]
-              " 
-              src="/images/ambulance.jpg" alt="" />
-              <div className="h-7 w-7
+              "
+                src="/images/ambulance.jpg"
+                alt=""
+              />
+              <div
+                className="h-7 w-7
               absolute
               bottom-3
               left-8
                rounded-full 
-               bg-[rgb(252,173,48)]"></div>
+               bg-[rgb(252,173,48)]"
+              ></div>
             </div>
-            <div className="flex items-center
+            <div
+              className="flex items-center
             justify-center
                 text-center
                 mt-1
                 w-[95%]
-            ">
-              <p className="
+            "
+            >
+              <p
+                className="
               px-4
                 text-center
                 font-normal
                 text-zinc-500
-              ">
+              "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatibus laudantium debitis quibusdam, optio velit veniam
                 eos id laboriosam cupiditate rem ullam a veritatis pariatur
                 magnam libero eum fuga provident ipsa.
               </p>
             </div>
-            <div className="flex 
+            <div
+              className="flex 
             flex-col 
             items-center 
             justify-center
             mt-6
             mb-10
-            ">
-                <h3 className="
+            "
+            >
+              <h3
+                className="
                 font-semibold
-                ">Madhesa</h3>
-                <p className=" text-red-500">Resident-Inaruwa</p>
+                "
+              >
+                Madhesa
+              </h3>
+              <p className=" text-red-500">Resident-Inaruwa</p>
             </div>
           </div>
           <div
@@ -214,52 +256,66 @@ const Stories = () => {
             {/* image */}
             <div className="relative">
               <img
-              className="
+                className="
               opacity-80
                 rounded-b-[35%]
                 h-[80%]
-              " 
-              src="/images/ambulance.jpg" alt="" />
-              <div className="h-7 w-7
+              "
+                src="/images/ambulance.jpg"
+                alt=""
+              />
+              <div
+                className="h-7 w-7
               absolute
               bottom-3
               left-8
                rounded-full 
-               bg-[rgb(252,173,48)]"></div>
+               bg-[rgb(252,173,48)]"
+              ></div>
             </div>
-            <div className="flex items-center
+            <div
+              className="flex items-center
             justify-center
                 text-center
                 mt-1
                 w-[95%]
-            ">
-              <p className="
+            "
+            >
+              <p
+                className="
               px-4
                 text-center
                 font-normal
                 text-zinc-500
-              ">
+              "
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatibus laudantium debitis quibusdam, optio velit veniam
                 eos id laboriosam cupiditate rem ullam a veritatis pariatur
                 magnam libero eum fuga provident ipsa.
               </p>
             </div>
-            <div className="flex 
+            <div
+              className="flex 
             flex-col 
             items-center 
             justify-center
             mt-6
             mb-10
-            ">
-                <h3 className="
+            "
+            >
+              <h3
+                className="
                 font-semibold
-                ">Madhesa</h3>
-                <p className=" text-red-500">Resident-Inaruwa</p>
+                "
+              >
+                Madhesa
+              </h3>
+              <p className=" text-red-500">Resident-Inaruwa</p>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };

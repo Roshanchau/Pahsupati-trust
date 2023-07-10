@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 import {
   CarouselProvider,
   Slider,
@@ -34,8 +35,12 @@ const Teams = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center py-2 md:py-4 px-4 md:px-6 mt-6">
-        <div className="flex items-center justify-center ">
+      <motion.div className="flex flex-col items-center justify-center py-2 md:py-4 px-4 md:px-6 mt-6">
+        <motion.div
+          initial={{ y: -100 , opacity:0}}
+          whileInView={{ y: 0,opacity:1, transition: { duration: 1 } }}
+          className="flex items-center justify-center "
+        >
           <h1
             className=" font-normal 
                         md:text-4xl
@@ -44,8 +49,10 @@ const Teams = () => {
           >
             Meet The Team
           </h1>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+         initial={{ y: -100}}
+         whileInView={{ y: 0, transition: { duration: 1 } }}
           className="
             sm:flex
             flex-row
@@ -94,9 +101,12 @@ const Teams = () => {
               INTERNATIONAL TEAM
             </p>
           </div>
-        </div>
+        </motion.div>
         {/* filter button */}
-        <div className="flex sm:hidden items-center justify-center mt-2">
+        <motion.div
+         initial={{ y: -100}}
+         whileInView={{ y: 0, transition: { duration: 1 } }}
+        className="flex sm:hidden items-center justify-center mt-2">
           <div
             className="flex
                  flex-col
@@ -126,59 +136,61 @@ const Teams = () => {
                 size={25}
               />
             </button>
-            
           </div>
-            {/* filter list */}
-   <div
-                  className={`z-50
+          {/* filter list */}
+          <div
+            className={`z-50
               bg-zinc-100
               absolute
               w-[80%]
               mt-60
               bg-opacity-90
              shadow-md p-4 ${show ? "" : "hidden"}`}
-                >
-                  <ul onClick={toggleShow} className="text-center">
-                    <li
-                      tabIndex={0}
-                      onClick={toggleshowTeam}
-                      className="text-[20px]
+          >
+            <ul onClick={toggleShow} className="text-center">
+              <li
+                tabIndex={0}
+                onClick={toggleshowTeam}
+                className="text-[20px]
                        font-normal
                       
                        text-zinc-500 p-1 focus-within:text-yellow-400 hover:bg-opacity-70"
-                    >
-                      Teams
-                      <div
-                        className="h-[1px]
+              >
+                Teams
+                <div
+                  className="h-[1px]
                        bg-neutral-500
                        mt-2
                        bg-opacity-40"
-                      ></div>
-                    </li>
-                    <li
-                      onClick={toggleshowBrand}
-                      className="text-[20px] font-normal text-zinc-500 p-1 hover:bg-yellow-400 hover:bg-opacity-70"
-                    >
-                      Brand Ambassador
-                      <div
-                        className="h-[1px]
+                ></div>
+              </li>
+              <li
+                onClick={toggleshowBrand}
+                className="text-[20px] font-normal text-zinc-500 p-1 hover:bg-yellow-400 hover:bg-opacity-70"
+              >
+                Brand Ambassador
+                <div
+                  className="h-[1px]
                        bg-neutral-500
                        mt-2
                        bg-opacity-40"
-                      ></div>
-                    </li>
-                    <li
-                      onClick={toggleshowInt}
-                      className="text-[20px] font-normal text-zinc-500 p-1 hover:bg-yellow-400 hover:bg-opacity-70"
-                    >
-                      International Team
-                    </li>
-                  </ul>
-                </div>
-        </div>
- 
+                ></div>
+              </li>
+              <li
+                onClick={toggleshowInt}
+                className="text-[20px] font-normal text-zinc-500 p-1 hover:bg-yellow-400 hover:bg-opacity-70"
+              >
+                International Team
+              </li>
+            </ul>
+          </div>
+        </motion.div>
+
         {!showTeam && (
-          <div className="container  mx-auto">
+          <motion.div
+          initial={{ y: 100 , opacity:0}}
+          whileInView={{ y: 0,opacity:1 , transition: { duration: 0.7 } }}
+          className="container  mx-auto">
             <div className="flex items-center justify-center w-full h-full py-20 sm:py-8 px-4">
               {/* Carousel for desktop and large size devices */}
               <CarouselProvider
@@ -187,7 +199,8 @@ const Teams = () => {
                 naturalSlideWidth={100}
                 isIntrinsicHeight={true}
                 totalSlides={4}
-                visibleSlides={3} isPlaying={true}
+                visibleSlides={3}
+                isPlaying={true}
                 step={1}
                 infinite={true}
               >
@@ -322,7 +335,8 @@ const Teams = () => {
                 naturalSlideWidth={100}
                 isIntrinsicHeight={true}
                 totalSlides={4}
-                visibleSlides={3} isPlaying={true}
+                visibleSlides={3}
+                isPlaying={true}
                 step={1}
                 infinite={true}
               >
@@ -500,7 +514,6 @@ const Teams = () => {
                       >
                         <Slide index={0}>
                           <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                           
                             <img
                               src="/images/team1.jpg"
                               alt="black chair and white table"
@@ -603,10 +616,13 @@ const Teams = () => {
                 </div>
               </CarouselProvider>
             </div>
-          </div>
+          </motion.div>
         )}
         {showBrand && (
-          <div className="container  mx-auto">
+          <motion.div
+          initial={{ y: 100 , opacity:0}}
+          whileInView={{ y: 0,opacity:1, transition: { duration: 0.7 } }}
+          className="container  mx-auto">
             <div className="flex items-center justify-center w-full h-full py-20 sm:py-8 px-4">
               {/* Carousel for desktop and large size devices */}
               <CarouselProvider
@@ -615,7 +631,8 @@ const Teams = () => {
                 naturalSlideWidth={400}
                 isIntrinsicHeight={true}
                 totalSlides={4}
-                visibleSlides={3} isPlaying={true}
+                visibleSlides={3}
+                isPlaying={true}
                 step={1}
                 infinite={true}
               >
@@ -758,7 +775,8 @@ const Teams = () => {
                 naturalSlideWidth={100}
                 isIntrinsicHeight={true}
                 totalSlides={4}
-                visibleSlides={3} isPlaying={true}
+                visibleSlides={3}
+                isPlaying={true}
                 step={1}
                 infinite={true}
               >
@@ -1038,10 +1056,13 @@ const Teams = () => {
                 </div>
               </CarouselProvider>
             </div>
-          </div>
+          </motion.div>
         )}
         {showInt && (
-          <div className="container  mx-auto">
+          <motion.div 
+          initial={{ y: 100 , opacity:0}}
+          whileInView={{ y: 0,opacity:1 , transition: { duration: 0.7 } }}
+          className="container  mx-auto">
             <div className="flex items-center justify-center w-full h-full py-20 sm:py-8 px-4">
               {/* Carousel for desktop and large size devices */}
               <CarouselProvider
@@ -1050,7 +1071,8 @@ const Teams = () => {
                 naturalSlideWidth={400}
                 isIntrinsicHeight={true}
                 totalSlides={4}
-                visibleSlides={3} isPlaying={true}
+                visibleSlides={3}
+                isPlaying={true}
                 step={1}
                 infinite={true}
               >
@@ -1193,7 +1215,8 @@ const Teams = () => {
                 naturalSlideWidth={100}
                 isIntrinsicHeight={true}
                 totalSlides={4}
-                visibleSlides={3} isPlaying={true}
+                visibleSlides={3}
+                isPlaying={true}
                 step={1}
                 infinite={true}
               >
@@ -1473,11 +1496,9 @@ const Teams = () => {
                 </div>
               </CarouselProvider>
             </div>
-          </div>
+          </motion.div>
         )}
-
-       
-      </div>
+      </motion.div>
     </>
   );
 };
