@@ -14,12 +14,14 @@ import {GrProjects} from "react-icons/gr"
 import {AiOutlineContacts} from "react-icons/ai"
 import {LiaDonateSolid} from "react-icons/lia"
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const TOP_OFFSET = 40;
-
 const Navbar = () => {
+const router=useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [showBackgroud, setShowBackgroud] = useState(false);
+
 
   useEffect(() => {
     Events.scrollEvent.register("begin", function () {
@@ -61,15 +63,16 @@ const Navbar = () => {
         
           className={`flex flex-row items-center sm:justify-between p-2
          t  w-full
-            z-50
+            z-40
             fixed
             top-0
             left-0
-            h-[80px]
+            h-[40px]
             lg:h-[auto]
             drop-shadow-xl
             transition
             ${showBackgroud ? "bg-zinc-50 " : ""}
+
   `}
         >
           <div
@@ -102,8 +105,9 @@ const Navbar = () => {
 
           <div> 
             <img
+            onClick={()=>router.push("/")}
               className={`transition duration h-[100px] w-[full] sm:h-20
-            ${showBackgroud ? "sm:h-[60px] h-[100px]" : ""}`}
+            ${showBackgroud ? "sm:h-[60px] h-[20px]" : ""}`}
               src="/images/logo1.png"
               alt="logo"
             />
@@ -123,14 +127,14 @@ const Navbar = () => {
               opacity: 1,
               transition: { duration: 0.5, delay:0.15},
             }}
-              className="font-thin
+              className={`font-thin
+              transition
+              duration
               text-nutral-600
               hidden
               mr-4
               font-sans
                text-[16px]
-                md:text-[18px]
-                lg:text-[20px]
                 sm:flex
                 flex-row
                 items-center
@@ -138,22 +142,17 @@ const Navbar = () => {
                  gap-5
                  md:gap-8 
                  lg:gap-10
-                 "
+            ${showBackgroud ? "md:text-[16px]" : "md:text-[20px]"}
+
+          `}
             >
               <li
+              onClick={()=>router.push("/")}
                 tabIndex={0}
                 className="drop-shadow-sm cursor-pointer  hover:text-yellow-500"
               >
-                <Link
-                  activeClass="active"
-                  to="SwiperComponent"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={2000}
-                >
                   Home
-                </Link>
+                
               </li>
               <li
                 tabIndex={0}
@@ -190,6 +189,7 @@ const Navbar = () => {
                 className="drop-shadow-sm cursor-pointer   hover:text-yellow-500"
               >
                 <Link
+                href="/"
                   activeClass="active"
                   to="Projects"
                   spy={true}
@@ -215,7 +215,9 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-              <li className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
+              <li
+              onClick={()=>router.push("/donate")}
+              className="drop-shadow-sm cursor-pointer  hover:text-yellow-500">
                 Donate Now
               </li>
             </motion.ul>

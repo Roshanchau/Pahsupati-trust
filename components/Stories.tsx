@@ -56,7 +56,7 @@ const Stories = () => {
             </h1>
           </motion.div>
           <motion.div
-            initial={{x:10, y: -10, opacity: 0 }}
+            initial={{x:20, y: -20, opacity: 0 }}
             viewport={{once:true}}
             whileInView={{ x:0, y: 0, opacity: 1, transition: { duration: 1 } }}
             className="flex
